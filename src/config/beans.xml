@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="Mustafa" class="org.javalog.model.Person">
+		<property name="name" value="Mustafa" />
+		<property name="surname" value="Demir" />
+		<property name="email" value="mustafa@javalog.org" />
+		<property name="salary" value="15000"/>
+	</bean>
+	
+	<bean id="Murat" class="org.javalog.model.Person">
+		<property name="name" value="Murat" />
+		<property name="surname" value="Guzel" />
+		<property name="email" value="murat@example.com" />
+		<property name="salary" value="10000"/>
+	</bean>
+	
+	<bean id="Javalog Inc" class="org.javalog.model.Company">
+		<property name="name" value="Javalog" />
+		<property name="ceo" ref="Mustafa" />
+		<property name="cto" ref="Murat" />
+	</bean>
+</beans>
